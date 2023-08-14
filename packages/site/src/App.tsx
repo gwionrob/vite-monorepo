@@ -1,10 +1,11 @@
-import { MyButton } from "site-lib"
-import './App.css'
+import { MyButton, add } from "site-lib";
 
 function App() {
   return (
-    <MyButton></MyButton>
-  )
+    <MyButton onClick={() => alert("Result: " + add(2, 2))}>
+      Add 2 and 2
+    </MyButton>
+  );
 }
 
-export default App
+export default App;
